@@ -3,12 +3,12 @@
 # code your #valid_move? method here
 
 def valid_move?(board,index)
-  if board[index] != " " && board[index].between?(0,8)
+  if board[index] != " " && board[index].between?(0.to_i,8.to_i)
     return true
 
   elsif board[index] == " " && board[index].between?(0,8)
     true
-    
+
   else
     false
   end
